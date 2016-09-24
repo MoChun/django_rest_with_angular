@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="{% static "angularjs/angular.js" %}"></script>
+<script type="text/javascript" src="{% static "angularjs/angular.min.js"%}"></script>
+<script type="text/javascript" src="{% static "bootstrap/js/bootstrap.min.js"%}"></script>
+<script type="text/javascript" src="{% static "bootstrap/js/ui-bootstrap-2.0.0.js"%}"></script>
+<script type="text/javascript" src="{% static "bootstrap/js/ui-bootstrap-2.0.0.min.js"%}"></script>
+<script type="text/javascript" src="{% static "bootstrap/js/ui-bootstrap-tpls-2.0.0.js"%}"></script>
+<script type="text/javascript" src="{% static "bootstrap/js/ui-bootstrap-tpls-2.0.0.min.js"%}"></script>
+
+<script>
+    angular.module("myApp", ['ui.bootstrap'])
+            .config(function($interpolateProvider){
+                $interpolateProvider.startSymbol('{[{');
+                $interpolateProvider.endSymbol('}]}');
+            })
+
+</script>
+
+

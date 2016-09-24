@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}WelCome{% endblock title %}</title>
+    <!--BootStrap><!-->
+    {% include "_stylesheets.html" %}
+    {% include "_scripts.html" %}
+    {% block css %}
+
+    {% endblock %}
+
+
+
+</head>
+
+<body ng-app="myApp">
+
+
+    {% block content %}
+    {% endblock content %}
+
+
+
+    {% block js %}
+
+    {% endblock %}
+
+</body>
+</html>
